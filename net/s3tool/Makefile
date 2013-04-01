@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2012/04/28 10:05:30 rpointel Exp $
+# $OpenBSD: $ 
 
 COMMENT =		Amazon S3 command line tool
 
