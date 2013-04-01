@@ -18,6 +18,8 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
+WANT_LIB= 	curlpp
+
 MASTER_SITES =	https://github.com/KrugerHeavyIndustries/s3tools/tarball/
 
 AUTOCONF_VERSION=2.69

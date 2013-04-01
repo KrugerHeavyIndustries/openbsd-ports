@@ -3,19 +3,19 @@
 COMMENT =		cURLpp is a C++ wrapper for libcURL
 
 DISTNAME =		curlpp-0.7.3
-EXTRACT_SUFX=		.tar.gz
+EXTRACT_SUFX=	.tar.gz
 
 CATEGORIES =		devel
 HOMEPAGE =		http://code.google.com/p/curlpp
 MAINTAINER =		Chris Kruger <chris.kruger@krugerheavyindustries.com>
 
 SHARED_LIBS +=		curlpp 0.2
-SHARED_LIBS += 		utilspp 0.0
+SHARED_LIBS += 	utilspp 0.0
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
+PERMIT_DISTFILES_CDROM = Yes
 PERMIT_DISTFILES_FTP =	Yes
 
 WANT_LIB= 		boost curl
