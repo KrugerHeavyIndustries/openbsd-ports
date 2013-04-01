@@ -7,7 +7,7 @@ EXTRACT_SUFX=	.tar.gz
 
 CATEGORIES =		devel
 HOMEPAGE =		http://code.google.com/p/curlpp
-MAINTAINER =		Chris Kruger <chris.kruger@krugerheavyindustries.com>
+MAINTAINER =		Chris Kruger <openbsd@krugerheavyindustries.com>
 
 SHARED_LIBS +=		curlpp 0.2
 SHARED_LIBS += 	utilspp 0.0

@@ -10,7 +10,7 @@ WRKDIST= 	${WRKDIR}/KrugerHeavyIndustries-s3tools-*
 
 CATEGORIES =		net
 HOMEPAGE =		http://github.com/KrugerHeavyIndustries/s3tools
-MAINTAINER =		Chris Kruger <chris.kruger@krugerheavyindustries.com>
+MAINTAINER =		Chris Kruger <openbsd@krugerheavyindustries.com>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
