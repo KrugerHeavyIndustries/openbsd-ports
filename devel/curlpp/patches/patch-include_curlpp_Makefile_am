@@ -1,0 +1,11 @@
+$OpenBSD$
+--- include/curlpp/Makefile.am.orig	Wed Apr  3 12:24:16 2013
++++ include/curlpp/Makefile.am	Wed Apr  3 12:24:43 2013
+@@ -12,6 +12,7 @@ pkginclude_HEADERS = \
+ 	Options.hpp \
+ 	Types.hpp \
+ 	cURLpp.hpp \
++	config.h \
+ 	config.h.in \
+ 	config.h.sample \
+ 	config.win32.h 

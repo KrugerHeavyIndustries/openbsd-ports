@@ -20,7 +20,12 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANT_LIB= 	curlpp
 
+LIB_DEPENDS= devel/curlpp
+
 MASTER_SITES =	https://github.com/KrugerHeavyIndustries/s3tools/tarball/
+
+BUILD_DEPENDS= ${MODGNU_AUTOCONF_DEPENDS} \
+					${MODGNU_AUTOMAKE_DEPENDS}
 
 AUTOCONF_VERSION=2.69
 AUTOMAKE_VERSION=1.12

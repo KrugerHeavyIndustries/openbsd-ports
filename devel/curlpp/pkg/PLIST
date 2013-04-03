@@ -16,6 +16,7 @@ include/curlpp/OptionBase.hpp
 include/curlpp/Options.hpp
 include/curlpp/Types.hpp
 include/curlpp/cURLpp.hpp
+include/curlpp/config.h
 include/curlpp/config.h.in
 include/curlpp/config.h.sample
 include/curlpp/config.win32.h
