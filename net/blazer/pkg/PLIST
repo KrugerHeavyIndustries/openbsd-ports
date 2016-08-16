@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+@bin bin/blazer
+share/doc/blazer/
+share/doc/blazer/README
