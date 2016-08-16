@@ -1,0 +1,11 @@
+@comment $OpenBSD$
+include/restclient-cpp/
+include/restclient-cpp/connection.h
+include/restclient-cpp/helpers.h
+include/restclient-cpp/restclient.h
+include/restclient-cpp/version.h
+lib/librestclient-cpp.a
+lib/librestclient-cpp.la
+@lib lib/librestclient-cpp.so.${LIBrestclient-cpp_VERSION}
+share/doc/restclient-cpp/
+share/doc/restclient-cpp/README.md
