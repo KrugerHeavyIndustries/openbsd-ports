@@ -2,7 +2,7 @@
 
 COMMENT =		C++ client for making HTTP/REST requests
 
-VERSION= 		0.4.4
+VERSION= 		0.4.5
 DISTNAME =	 	restclient-cpp-{restclient-cpp/archive/}${VERSION}.tar.gz	
 EXTRACT_SUFX=	 	
 PKGNAME=		restclient-cpp-${VERSION}
@@ -20,7 +20,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-GH_ACCOUNT=		mrtazz
+GH_ACCOUNT=	        KrugerHeavyIndustries
 GH_PROJECT=		restclient-cpp
 GH_TAGNAME=		${VERSION}
 

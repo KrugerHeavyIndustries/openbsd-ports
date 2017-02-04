@@ -2,7 +2,7 @@
 
 COMMENT =		Backblaze B2 command line tool
 
-VERSION=		0.2.6
+VERSION=		0.3.6
 DISTNAME =		blazer-{blazer/archive/}${VERSION}.tar.gz
 EXTRACT_SUFX=
 PKGNAME=		blazer-${VERSION}
@@ -23,20 +23,23 @@ GH_TAGNAME=		${VERSION}
 
 AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.15
+
 CONFIGURE_STYLE=	gnu
-BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
-			${MODGNU_AUTOMAKE_DEPENDS} \
-			devel/jansson
+BUILD_DEPENDS+=		devel/jansson
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
-LIB_DEPENDS +=		devel/jansson devel/restclient-cpp
-WANTLIB +=		c crypto m ssl stdc++ jansson restclient-cpp
+MAKE_ENV+= 		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+			AUTOMAKE_VERSION=${AUTOMAKE_VERSION}
+
+LIB_DEPENDS+=		devel/jansson devel/restclient-cpp
+WANTLIB+=		c crypto m ssl stdc++ jansson restclient-cpp
 
 pre-configure:
 	@cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
-		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
-		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} autoreconf --force --install
+	AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+	AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
+	autoreconf --force --install
 
 .include <bsd.port.mk>
