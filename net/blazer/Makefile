@@ -2,7 +2,7 @@
 
 COMMENT =		Backblaze B2 command line tool
 
-VERSION=		0.3.6
+VERSION=		0.4.1
 DISTNAME =		blazer-{blazer/archive/}${VERSION}.tar.gz
 EXTRACT_SUFX=
 PKGNAME=		blazer-${VERSION}
