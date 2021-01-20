@@ -1,0 +1,8 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Configure /var/bitwarden_rs/.env
+
+$ rcctl enable bitwarden_rs
+$ rcctl start bitwarden_rs

@@ -1,0 +1,15 @@
+#!/bin/ksh
+
+daemon="${TRUEPREFIX}/sbin/bitwarden_rs"
+
+. /var/bitwarden_rs/data/.env
+
+. /etc/rc.d/rc.subr
+
+rc_reload=NO
+
+rc_start() {
+	${rcexec} "WEB_VAULT_ENABLED=false DATA_FOLDER=/var/bitwarden_rs/data DATABASE_URL=${DATABASE_URL} ${daemon} ${daemon_flags} >> /var/bitwarden_rs/bitwarden_rs.log 2>&1 &"
+}
+
+rc_cmd $1
