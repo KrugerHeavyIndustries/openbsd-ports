@@ -2,10 +2,9 @@
 
 COMMENT =		C++ client for making HTTP/REST requests
 
-VERSION= 		0.4.5
-DISTNAME =	 	restclient-cpp-{restclient-cpp/archive/}${VERSION}.tar.gz	
+VERSION= 		0.5.2
+DISTNAME=		restclient-cpp-${VERSION}.tar.gz
 EXTRACT_SUFX=	 	
-PKGNAME=		restclient-cpp-${VERSION}
 
 CATEGORIES =		devel
 HOMEPAGE =		http://code.mrtazz.com/restclient-cpp
@@ -16,11 +15,10 @@ SHARED_LIBS +=		restclient-cpp 0.0
 #SEPARATE_BUILD = Yes
 
 # LGPLv3
-PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_FTP =	Yes
+PERMIT_PACKAGE =	Yes
+PERMIT_DISTFILES =	Yes
 
-GH_ACCOUNT=	        KrugerHeavyIndustries
+GH_ACCOUNT=	        mrtazz
 GH_PROJECT=		restclient-cpp
 GH_TAGNAME=		${VERSION}
 
