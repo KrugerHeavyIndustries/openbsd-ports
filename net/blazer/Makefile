@@ -2,8 +2,8 @@
 
 COMMENT =		Backblaze B2 command line tool
 
-VERSION=		0.4.1
-DISTNAME =		blazer-{blazer/archive/}${VERSION}.tar.gz
+VERSION=		0.4.3
+DISTNAME =		blazer-${VERSION}.tar.gz
 EXTRACT_SUFX=
 PKGNAME=		blazer-${VERSION}
 #WRKDIST= 		${WRKDIR}/KrugerHeavyIndustries-blazer-*
@@ -13,9 +13,8 @@ HOMEPAGE =		http://github.com/KrugerHeavyIndustries/blazer
 MAINTAINER =		Chris Kruger <chris.kruger@krugerheavyindustries.com>
 
 # LGPLv3
-PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_FTP =	Yes
+PERMIT_PACKAGE =	Yes
+PERMIT_DISTFILES =	Yes
 
 GH_ACCOUNT=		KrugerHeavyIndustries
 GH_PROJECT=		blazer
