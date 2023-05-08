@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.6 2016/08/16 14:05:30 montdidier Exp $
+# $OpenBSD: Makefile,v 1.6 2023/05/08 21:05:30 montdidier Exp $
 
 COMMENT =		Backblaze B2 command line tool
 
-VERSION=		0.4.3
+VERSION=		0.4.5
 DISTNAME =		blazer-${VERSION}.tar.gz
 EXTRACT_SUFX=
 PKGNAME=		blazer-${VERSION}
