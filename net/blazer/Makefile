@@ -33,7 +33,7 @@ MAKE_ENV+= 		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
 			AUTOMAKE_VERSION=${AUTOMAKE_VERSION}
 
 LIB_DEPENDS+=		devel/jansson devel/restclient-cpp
-WANTLIB+=		c crypto m ssl stdc++ jansson restclient-cpp
+WANTLIB+=		c crypto m ssl c++ jansson restclient-cpp
 
 pre-configure:
 	@cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \

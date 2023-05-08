@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
 CONFIGURE_ENV =		CXXFLAGS="-I${LOCALBASE}/include -fPIC" \
 			LDFLAGS="-L${LOCALBASE}/lib" 
 
-WANTLIB += 		c crypto m ssl stdc++ z
+WANTLIB += 		c crypto m ssl c++ z
 
 USE_LIBTOOL=		gnu
 
