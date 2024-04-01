@@ -2,9 +2,10 @@
 
 COMMENT =		C++ client for making HTTP/REST requests
 
-VERSION= 		0.5.2
-DISTNAME=		restclient-cpp-${VERSION}.tar.gz
-EXTRACT_SUFX=	 	
+GH_ACCOUNT =	        mrtazz
+GH_PROJECT =		restclient-cpp
+GH_TAGNAME =		0.5.2
+PKGNAME = 		${DISTNAME:L}
 
 CATEGORIES =		devel
 HOMEPAGE =		http://code.mrtazz.com/restclient-cpp
@@ -17,10 +18,6 @@ SHARED_LIBS +=		restclient-cpp 0.0
 # LGPLv3
 PERMIT_PACKAGE =	Yes
 PERMIT_DISTFILES =	Yes
-
-GH_ACCOUNT=	        mrtazz
-GH_PROJECT=		restclient-cpp
-GH_TAGNAME=		${VERSION}
 
 AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.15
