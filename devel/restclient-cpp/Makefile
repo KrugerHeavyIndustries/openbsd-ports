@@ -4,7 +4,7 @@ COMMENT =		C++ client for making HTTP/REST requests
 
 GH_ACCOUNT =	        mrtazz
 GH_PROJECT =		restclient-cpp
-GH_TAGNAME =		0.5.2
+GH_TAGNAME =		0.5.3
 PKGNAME = 		${DISTNAME:L}
 
 CATEGORIES =		devel
