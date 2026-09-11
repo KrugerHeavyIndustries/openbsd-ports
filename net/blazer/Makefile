@@ -2,8 +2,7 @@
 
 COMMENT =		Backblaze B2 command line tool
 
-VERSION=		0.4.8
-REVISION=		0
+VERSION=		0.5.0
 DISTNAME =		blazer-${VERSION}.tar.gz
 EXTRACT_SUFX=
 PKGNAME=		blazer-${VERSION}
@@ -25,7 +24,7 @@ AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.15
 
 CONFIGURE_STYLE=	gnu
-BUILD_DEPENDS+=		devel/jansson
+BUILD_DEPENDS+=		devel/jansson devel/fmt
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
@@ -33,8 +32,8 @@ CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 MAKE_ENV+= 		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
 			AUTOMAKE_VERSION=${AUTOMAKE_VERSION}
 
-LIB_DEPENDS+=		devel/jansson devel/restclient-cpp
-WANTLIB+=		c crypto m ssl c++ jansson restclient-cpp
+LIB_DEPENDS+=		devel/jansson devel/restclient-cpp devel/fmt
+WANTLIB+=		c crypto m ssl c++ jansson restclient-cpp fmt
 
 pre-configure:
 	@cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
