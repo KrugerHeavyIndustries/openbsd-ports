@@ -1,0 +1,4 @@
+filter-skimverify is an opensmtpd filter that performs SPF 
+and DKIM verification of email that is passed through the
+filter. It adds an Authentication-Results header with the 
+outcome.

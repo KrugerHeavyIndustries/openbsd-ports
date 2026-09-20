@@ -1,0 +1,17 @@
+Index: Cargo.toml
+--- Cargo.toml.orig
++++ Cargo.toml
+@@ -5,9 +5,12 @@ edition = "2021"
+ description = "OpenSMTPD filter for DKIM signature verification and SPF alignment checking"
+ 
+ [dependencies]
+-opensmtpd-filter = { git = "https://github.com/KrugerHeavyIndustries/opensmtpd-filter_rs" }
++opensmtpd-filter = "0.1.0"
+ mail-auth = "0.13.1"
+ tokio = { version = "1", features = ["rt", "net"] }
+ clap = { version = "4", features = ["derive"] }
+ log = "0.4"
+ env_logger = "0.11"
++
++[patch.crates-io]
++opensmtpd-filter = { path = "/usr/obj/ports/opensmtpd-filter-0.1.0.d5c2205b71bd3a54ac185de33f7c84fc096e5743/opensmtpd-filter_rs-d5c2205b71bd3a54ac185de33f7c84fc096e5743" }
