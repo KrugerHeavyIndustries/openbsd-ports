@@ -1,4 +1,4 @@
-COMMENT =		line oriented search tool using Rust's regex library
+COMMENT =		rust library for writing opensmtpd filters
 
 GH_ACCOUNT =		KrugerHeavyIndustries
 GH_PROJECT =		opensmtpd-filter_rs
