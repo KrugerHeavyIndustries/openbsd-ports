@@ -2,9 +2,14 @@
 
 COMMENT =		C++ client for making HTTP/REST requests
 
+V= 			0.5.3
+
+# keep package version above 7.9-stable
+REVISION= 		0
+
 GH_ACCOUNT =	        mrtazz
 GH_PROJECT =		restclient-cpp
-GH_TAGNAME =		0.5.3
+GH_TAGNAME =		$V
 PKGNAME = 		${DISTNAME:L}
 
 CATEGORIES =		devel
