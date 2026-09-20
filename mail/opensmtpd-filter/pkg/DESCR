@@ -1,1 +1,2 @@
-mail library
+opensmtpd-filter is an tokio based library which allows for easy writing
+of opensmtpd filter applications in rust.
