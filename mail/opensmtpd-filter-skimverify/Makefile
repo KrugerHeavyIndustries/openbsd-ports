@@ -7,7 +7,7 @@ DISTNAME=		opensmtpd-filter-skimverify-0.0.0.${GH_COMMIT}
 
 CATEGORIES =		mail
 
-MAINTAINER =		Chris Kruger <montdidier@noreply.github.com>
+MAINTAINER =		Chris Kruger <montdidier@users.noreply.github.com>
 
 # Unlicense/MIT
 PERMIT_PACKAGE =	Yes
